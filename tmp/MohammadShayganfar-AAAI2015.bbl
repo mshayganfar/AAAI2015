@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Dancy}{2013}]{dancy:actR-physiology-affect}
+Dancy, C.~L.
+\newblock 2013.
+\newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
+\newblock {\em Biologically Inspired Cognitive Architectures} 6:40--45.
+
 \bibitem[\protect\citeauthoryear{Gratch and
   C.Marsella}{2004}]{gratch:domain-independent}
 Gratch, J., and C.Marsella, S.
@@ -15,6 +21,25 @@ Grosz, B.~J., and Sidner, C.~L.
 \newblock In Cohen, P.~R.; Morgan, J.; and Pollack, M.~E., eds., {\em
   Intentions in Communication}. Cambridge, MA: MIT Press.
 \newblock  417--444.
+
+\bibitem[\protect\citeauthoryear{John Robert~Anderson}{1998}]{anderson:act-r}
+John Robert~Anderson, C.~L.
+\newblock 1998.
+\newblock {\em The Atomic Components of Thought}.
+\newblock Lawrence Erlbaum Associates.
+
+\bibitem[\protect\citeauthoryear{Laird}{2012}]{laird:soar}
+Laird, J.
+\newblock 2012.
+\newblock {\em The Soar Cognitive Architecture}.
+\newblock MIT Press.
+
+\bibitem[\protect\citeauthoryear{MarinierIII, Laird, and
+  Lewis}{2009}]{marinier:behavior-emotion}
+MarinierIII, R.~P.; Laird, J.~E.; and Lewis, R.~L.
+\newblock 2009.
+\newblock A computational unification of cognitive behavior and emotion.
+\newblock {\em Cognitive System Research} 10(1):48--69.
 
 \bibitem[\protect\citeauthoryear{Sousa}{1990}]{sousa:rationality-emotion}
 Sousa, R.~D.

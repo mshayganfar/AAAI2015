@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: MohammadShayganfar-AAAI2015.aux
+The style file: aaai.bst
+Database file #1: mshayganfar.bib.bib
+You've used 3 entries,
+            2568 wiz_defined-function locations,
+            593 strings with 5007 characters,
+and the built_in function-call counts, 1287 in all, are:
+= -- 133
+> -- 44
+< -- 1
++ -- 15
+- -- 13
+* -- 95
+:= -- 214
+add.period$ -- 18
+call.type$ -- 3
+change.case$ -- 16
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 54
+empty$ -- 100
+format.name$ -- 18
+if$ -- 272
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 22
+num.names$ -- 11
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 20
+quote$ -- 0
+skip$ -- 41
+stack$ -- 0
+substring$ -- 70
+swap$ -- 15
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 0
+while$ -- 11
+width$ -- 6
+write$ -- 45

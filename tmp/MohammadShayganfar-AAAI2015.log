@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  14 JUL 2015 16:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  15 JUL 2015 17:11
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -156,8 +156,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 26.
 
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 26.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
@@ -174,11 +177,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 File: figure/theory-general-croped.pdf Graphic file (type pdf)
 
 <use figure/theory-general-croped.pdf>
-Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 13
-0.
+Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 12
+9.
 (pdftex.def)             Requested size: 239.79135pt x 163.7787pt.
  (./MohammadShayganfar-AAAI2015.bbl
-Underfull \vbox (badness 2229) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figure/theory-general-croped.pdf>]) [3
 
@@ -186,7 +189,7 @@ Underfull \vbox (badness 2229) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  1600 strings out of 495028
  23376 string characters out of 6181497
- 83359 words of memory out of 5000000
+ 83362 words of memory out of 5000000
  4798 multiletter control sequences out of 15000+600000
  16325 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -197,7 +200,7 @@ m/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MohammadShayganfar-AAAI2015.pdf (3 pages, 80491 bytes).
+Output written on MohammadShayganfar-AAAI2015.pdf (3 pages, 78792 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

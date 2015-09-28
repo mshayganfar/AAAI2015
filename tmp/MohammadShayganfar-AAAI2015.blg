@@ -5,36 +5,36 @@ The style file: aaai.bst
 Database file #1: mshayganfar.bib.bib
 You've used 7 entries,
             2568 wiz_defined-function locations,
-            617 strings with 5561 characters,
-and the built_in function-call counts, 2575 in all, are:
-= -- 267
-> -- 83
+            618 strings with 5490 characters,
+and the built_in function-call counts, 2622 in all, are:
+= -- 272
+> -- 89
 < -- 1
-+ -- 30
-- -- 25
-* -- 190
-:= -- 429
++ -- 31
+- -- 27
+* -- 197
+:= -- 436
 add.period$ -- 38
 call.type$ -- 7
-change.case$ -- 36
+change.case$ -- 37
 chr.to.int$ -- 7
 cite$ -- 7
 duplicate$ -- 110
-empty$ -- 203
-format.name$ -- 36
-if$ -- 533
+empty$ -- 204
+format.name$ -- 39
+if$ -- 543
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 10
 newline$ -- 46
 num.names$ -- 23
-pop$ -- 37
+pop$ -- 38
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 47
 quote$ -- 0
 skip$ -- 84
 stack$ -- 0
-substring$ -- 127
+substring$ -- 129
 swap$ -- 23
 text.length$ -- 1
 text.prefix$ -- 0

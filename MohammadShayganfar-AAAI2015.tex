@@ -13,27 +13,36 @@
 /Title (Affective Motivational Collaboration Theory)
 /Author (Put All Your Authors Here, Separated by Commas)}
 \setcounter{secnumdepth}{0}  
+
+\usepackage{atbegshi,picture}
+%\usepackage{lipsum}
+
+% \AtBeginShipout{\AtBeginShipoutUpperLeft{%
+%   \put(\dimexpr\paperwidth-6.5cm\relax,-1.5cm){\makebox[0pt][r]{\framebox{SUBMITTED
+%   TO AAAI FALL SYMPOSIUM 2015. PLEASE DO NOT REDISTRIBUTE.}}}%
+% }}
+
  \begin{document}
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
 \title{Affective Motivational Collaboration Theory}
-%\author{Mahni Shayganfar, Charles Rich, Candace L. Sidner\\
-%Worcester Polytechnic Institute\\
-%Computer Science Department\\
-%100 Institute Rd, Worcester, MA 01609\\
-%}
+\author{Mahni Shayganfar, Charles Rich, Candace L. Sidner\\
+Worcester Polytechnic Institute\\
+Computer Science Department\\
+100 Institute Rd, Worcester, MA 01609\\
+mshayganfar $|$ rich $|$ sidner@wpi.edu\\
+}
 \maketitle
 \begin{abstract}
 \begin{quote}
 We investigate the mutual influence of affective and collaboration processes in
 a cognitive theory to support the interaction between humans and robots or
-virtual agents. We will develop new algorithms for these processes, as well as a
-new overall computational model for implementing collaborative robots and
-agents. We build primarily on the \textit{cognitive appraisal} theory of
-emotions \cite{gratch:domain-independent} and the \textit{SharedPlans} theory
-\cite{grosz:plans-discourse} of collaboration to investigate the structure,
-fundamental processes and functions of emotions in a collaboration context. As
+virtual agents. We have developed new algorithms for some of these processes, as
+well as a new overall computational model for implementing collaborative robots
+and agents. We build primarily on the \textit{cognitive appraisal} theory of
+emotions and the \textit{SharedPlans} theory of collaboration to investigate the
+structure and fundamental processes of affect in a collaboration context. As
 part of this work, we also address a deficiency in existing cognitive models by
 accounting for the influence of motivation on collaborative behaviors, such as
 overcoming an impasse. This motivation mechanism uses the results of cognitive
@@ -42,56 +51,43 @@ structure.
 \end{quote}
 \end{abstract}
 
-\noindent Ronald De Sousa in The Rationality of Emotion
-\cite{sousa:rationality-emotion} makes a good case for the claim that humans are
-capable of rationality largely because they are creatures with emotions. The
-idea of having robots or other intelligent agents living in a human environment
-has been a persistent dream from science fiction books to artificial
-intelligence and robotics laboratories. However, there are many challenges in
-achieving collaboration between robots and humans in the same environment. Some
-of these challenges involve physical requirements, some involve cognitive
-requirements, and some involve social requirements. Thus far, there has been an
-emphasis on the design of robots to deal with the physical requirements. Many
-researchers are also working on the cognitive requirements, inspired by a
-diverse set of disciplines. As time passes, there is an increasing recognition
-of the importance of the social requirements.
-
-\section{Motivation}
-
-
+\vspace*{-1mm}
 An important aspect of the sociability of robots and agents is their ability to
-collaborate with humans in the same environment. Therefore, it is important to
-understand what makes a collaboration effective. One's cognitive processes and
-the ability to understand the collaborative environment impact the effectiveness
-of a collaboration. Examples of cognitive capabilities that support the
-effectiveness of collaboration include: a) perceiving one's own internal states
-and b) communicating them, c) coordinating personal and group behaviors, d)
-identifying self and mutual interests, e) recognizing the accountability of
-private and shared goals, f) selecting appropriate actions with respect to
-events, and g) engaging others in collaboration.
+collaborate with humans in the same environment. There are many challenges in
+achieving collaboration between robots/agents and humans in the same
+environment. One of the important issues is to understand what makes a
+collaboration effective. One's cognitive processes and the ability to understand
+the collaborative environment impact the effectiveness of a collaboration.
+Examples of cognitive capabilities that support the effectiveness of
+collaboration include: a) perceiving one's own internal states and b)
+communicating them, c) coordinating personal and group behaviors, d) identifying
+self and mutual interests, e) recognizing the accountability of private and
+shared goals, f) selecting appropriate actions with respect to events, and g)
+engaging others in collaboration.
 
-We are investigating the cognitive processes involved in a collaboration in the
-context of a cognitive architecture. There are several well-developed cognitive
-architectures, e.g., Soar \cite{laird:soar} and ACT-R \cite{anderson:act-r},
-each with different approaches to defining the basic cognitive and perceptual
-operations. There have also been efforts to integrate affect into these
-architectures \cite{dancy:actR-physiology-affect,marinier:behavior-emotion}. In
-general, however, these cognitive architectures do not focus on processes to
-specifically produce emotion-regulated goal-driven collaborative behaviors. At
-the same time, existing collaboration theories, e.g., SharedPlans theory
-\cite{grosz:plans-discourse}, focus on describing the structure of a
-collaboration in terms of fundamental mental states, e.g., mutual beliefs or
-intentions. However, they do not describe the associated processes, their
-relationships, and their influences on each other. In contrast,
-\textit{Affective Motivational Collaboration Theory} deals with the major
+Thus, it is crucial to investigate the cognitive processes involved in a
+collaboration in the context of a cognitive architecture. There are several
+well-developed cognitive architectures, e.g., Soar \cite{laird:soar} and ACT-R
+\cite{anderson:act-r}, each with different approaches to defining the basic
+cognitive and perceptual operations. There have also been efforts to integrate
+affect into these architectures \cite{marinier:behavior-emotion}. In general,
+however, these cognitive architectures do not focus on processes to specifically
+produce affect-regulated goal-driven collaborative behaviors. At the same time,
+existing collaboration theories, e.g. SharedPlans theory
+\cite{grosz:plans-discourse}, Joint Intentions \cite{cohen:teamwork}, and STEAM
+\cite{tambe:flexible-teamwork}, focus on describing the structure of a
+collaboration in terms of mental states, e.g., mutual beliefs or intentions.
+However, they do not describe the associated processes, their relationships, and
+their influences on each other. In contrast, in \textit{Affective Motivational
+Collaboration Theory}, we are interested to investigate and explain major
 processes, including affective and motivational processes, having an impact on
-the collaboration structure. This theory is informed by research in psychology
-and artificial intelligence. Our contribution, generally speaking, will be to
+the collaboration structure. Our contribution, generally speaking, is to
 synthesize prior work on motivation, appraisal and collaboration, and thus to
-provide a new theory which describes the prominent emotion-regulated goal-driven
-phenomena in a dyadic collaboration.
+provide a new theory which describes the prominent affect-regulated goal-driven
+processes in a dyadic collaboration.
 
-\section{Collaboration and Emotion}
+\vspace*{-3mm}
+\section{Affect and Collaboration}
 
 Collaboration is a coordinated activity in which the participants work jointly
 to satisfy a shared goal \cite{grosz:plans-discourse}. There are many important
@@ -105,9 +101,7 @@ failure, allows an agent to consider the collaborator's anticipated mental
 states and emotions, while managing its own internal goals and the
 collaboration's shared goal. There are also other questions about the components
 involved in these processes at the cognitive level, such as the processes that
-are involved for evaluative, regulatory or motivative purposes. There has also
-not been enough attention on the processes that are involved to maintain the
-social aspects of a collaboration.
+are involved for evaluative, regulatory or motivative purposes.
 
 Emotions have a key role in influencing the cognitive processes involved in
 social interaction and collaboration. Emotion processing and decision-making are
@@ -124,14 +118,17 @@ roles enhance an individual's autonomy and adaptation as well as his/her
 coordination and communication competencies in a dynamic, uncertain and
 resource-limited environment.
 
+\vspace*{-1mm}
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.474\textwidth]{figure/theory-general-croped.pdf}
-  \caption{Computational framework based on Affective Motivational Collaboration
-  Theory (arrows indicate primary influences between mechanisms).}
+  \caption{{\fontsize{8.5}{9}\selectfont Computational framework based on
+  Affective Motivational Collaboration Theory (arrows indicate primary
+  influences between mechanisms).}}
   \label{fig:cpm}
 \end{figure}
 
+\vspace*{-7mm}
 \section{Affective Motivational Collaboration Theory}
 
 We are building Affective Motivational Collaboration Theory on the foundations
@@ -152,29 +149,27 @@ and emotional changes. Affective Motivational Collaboration Theory explains how
 emotions regulate the underlying processes when these events occur during
 collaboration. This theory elucidates the role of motives as goal-driven
 emotion-regulated constructs with which an agent can form new intentions to cope
-with internal and external events.
+with internal and external events. Our focus is on the mechanisms depicted as
+mental processes in Figure \ref{fig:cpm} along with the mental states. 
 
-Affective Motivational Collaboration Theory explains the functions of emotions
-in a dyadic collaboration and show how affective mechanisms can coordinate
-social interactions by enabling one to anticipate other's emotions, beliefs and
-intentions. Our focus is on the mechanisms depicted as mental processes in
-Figure \ref{fig:cpm} along with the mental states. The \textit{Mental States}
-includes self's (robot's) beliefs, intentions, motives, goals and emotion
-instances as well as the anticipated Mental States of the other (human). The
-\textit{Collaboration} mechanism maintains constraints on actions, including
-task states and the ordering of tasks. The \textit{Collaboration} mechanism also
-provides processes to update and monitor the shared plan. The \textit{Appraisal}
-mechanism is responsible for evaluating changes in the self's Mental States, the
-anticipated Mental States of the other, and the state of the collaboration
-environment. The \textit{Coping} mechanism provides the self with different
-coping strategies associated with changes in the self's mental states with
-respect to the state of the collaboration. The \textit{Motivation} mechanism
-operates whenever the self a) requires a new motive to overcome an internal
-impasse in an ongoing task, or b) wants to provide an external motive to the
-other when the other faces a problem in a task. The \textit{Theory of Mind}
-mechanism is the mechanism that infers a model of the other's anticipated mental
-state. The self progressively updates this model during the collaboration.
+The \textit{Mental States} includes self's (robot's) beliefs, intentions,
+motives, goals and emotion instances as well as the anticipated Mental States of
+the other (human). The \textit{Collaboration} mechanism maintains constraints on
+actions, including task states and the ordering of tasks. The
+\textit{Collaboration} mechanism also provides processes to update and monitor
+the shared plan. The \textit{Appraisal} mechanism is responsible for evaluating
+changes in the self's Mental States, the anticipated Mental States of the other,
+and the state of the collaboration environment. The \textit{Coping} mechanism
+provides the self with different coping strategies associated with changes in
+the self's mental states with respect to the state of the collaboration. The
+\textit{Motivation} mechanism operates whenever the self a) requires a new
+motive to overcome an internal impasse in an ongoing task, or b) wants to
+provide an external motive to the other when the other faces a problem in a
+task. The \textit{Theory of Mind} mechanism is the mechanism that infers a model
+of the other's anticipated mental state. The self progressively updates this
+model during the collaboration.
 
+\vspace*{-3mm}
 \section{Conclusion}
 
 Current computational theories for human-robot collaboration specify the
@@ -183,14 +178,27 @@ that generate and maintain these structures. Emotions due to their regulatory,
 evaluative, communicative, and motivative intra/interpersonal functions are
 crucial to be used by the underlying processes of collaboration. We are
 developing a new computational theory, called Affective Motivational
-Collaboration Theory, that combines emotion-based processes, such as appraisal
+Collaboration Theory, that combines affective processes, such as appraisal
 and coping, with collaboration processes, such as planning, in a single unified
-framework. In the future, we are going to implement the processes involved in
-the underlying emotion-regulated mechanisms to develop collaborative behaviors
-in an interactive robot.
+framework.
 
-This work was supported in part by the National Science Foundation under award
-IIS-1012083.
+The theoretical part of our computational architecture is primarily
+investigated. The major required mechanisms and processes involved in our
+computational framework are known. We have implemented a few hypothetical
+collaboration examples. We have used JESS (Java Expert System Shell) language to
+simulate some of the crucial processes in our computational framework and
+speculate about the relationships between different mechanisms and their
+underlying processes. We have recently developed algorithms to compute four
+appraisal variables, i.e., \textit{relevance, desirability, expectedness} and
+\textit{controllability} using collaboration's structure. We conduct a study to
+compare the results of human subjects' evaluation of some events and our agent's
+appraisals. We will develop and integrate the Motivation mechanism
+into our framework in the next step.
+
+%This work was supported in part by the National Science Foundation under award
+%IIS-1012083.
+
+\vspace*{-3mm}
 
 \bibliography{mshayganfar.bib}
 \bibliographystyle{aaai}
